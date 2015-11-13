@@ -32,3 +32,18 @@ and the variance is
 {$$}
 V[Y] = \sum_{y\in\mathcal{Y}} \left(y-E[Y]\right)^2 p_Y(y).
 {/$$}
+
+
+
+
+### Bernoulli distribution
+
+The Bernoulli distribution, named after Swiss scientist Jacob Bernoulli, has support {$$}\mathcal{Y} = \{0,1\}{/$$} and probability mass function 
+
+{$$}
+p_Y(1) = P(Y=1) = \pi = 1 - P(Y=0) = p_Y(0)
+{/$$}
+
+where {$$}\pi\in \[0,1\]{/$$}.
+We write {$$}Y\sim Ber(\pi){/$$} which has {$$}E[Y] = \pi{/$$} and {$$}V[Y] = \pi(1-\pi){/$$}. We often refer to {$$}Y=1{/$$} as a success and {$$}Y=1{/$$} as a failure. 
+
