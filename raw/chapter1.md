@@ -22,9 +22,9 @@ In this scenario
 
 $$
 C(x) = \left\{ \begin{array}{rl}
-2.00 & \mbox{if $x$ is Nabisco} \\
-1.80 & \mbox{if $x$ is off brand} \\
-1.75 & \mbox{if $x$ is store brand}
+2.00 & \mbox{if }x{ is Nabisco} \\
+1.80 & \mbox{if }x{ is off brand} \\
+1.75 & \mbox{if }x{ is store brand}
 \end{array} \right.
 $$
 
@@ -47,6 +47,8 @@ It tasted terrible.
 Since that day, when buying saltine crackers, I have only bought Nabisco Premium Saltines&trade;.
 
 Apparently for all my future decisions my cost function has changed (assuming that there are cheaper brands than Nabisco).
+I need to somehow incorporate my satisfaction into the cost function since my satisfaction from eating a Nabisco brand cracker was much higher than the store brand. 
+
 
 
 
