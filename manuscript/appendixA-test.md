@@ -11,24 +11,24 @@ But the idea here is that when building a model for real data, the parameters ar
 
 ## Discrete distributions
 
-Discrete distributions are characterized by their probabiliy mass functions $p_Y(y)=P(Y=y)$ which describes the probability that the random variable $Y$ will attain the value $y$. 
-Each of these distributions will have a support $\mathcal{Y}$ that just describes the values that the random variable can attain which is also the values at which we can evaluate $p_Y(y)$. 
+Discrete distributions are characterized by their probabiliy mass functions {$$}p_Y(y)=P(Y=y){/$$} which describes the probability that the random variable {$$}Y{/$$} will attain the value {$$}y{/$$}. 
+Each of these distributions will have a support {$$}\mathcal{Y}{/$$} that just describes the values that the random variable can attain which is also the values at which we can evaluate {$$}p_Y(y){/$$}. 
 For the discrete distribution to be proper, we need to have 
 
-$$
+{$$}
 \sum_{y\in\mathcal{Y}} p_Y(y) = 1.
-$$
+{/$$}
 
-Therefore, for any discrete random variable, we know that $p_Y(y) \le 1$ for any value $y$ in its support, i.e. $y\in\mathcal{Y}$.
+Therefore, for any discrete random variable, we know that {$$}p_Y(y) \le 1{/$$} for any value {$$}y{/$$} in its support, i.e. {$$}y\in\mathcal{Y}{/$$}.
 
 For a discrete random variable, the expectation is
 
-$$
+{$$}
 E[Y] = \sum_{y\in\mathcal{Y}} y\, p_Y(y)
-$$
+{/$$}
 
 and the variance is 
 
-$$
+{$$}
 V[Y] = \sum_{y\in\mathcal{Y}} \left(y-E[Y]\right)^2 p_Y(y).
-$$
+{/$$}
