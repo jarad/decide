@@ -7,3 +7,28 @@ This appendix introduces a number of discrete and continuous distributions that 
 Throughout this appendix I will be using a capital {$$}Y{/$$} to indicate the random variable, i.e. the value the data could take on, {$$}y{/$$} to indicate the realized value of the random variable, and Greek letters to indicate parameters of the distributions. 
 In this appendix, we treat the parameters as if they are known and therefore I am deviating from my previous convention introduced in Chapter ??. 
 But the idea here is that when building a model for real data, the parameters are unknown and we will estimated using the observed data. 
+
+
+## Discrete distributions
+
+Discrete distributions are characterized by their probabiliy mass functions $p_Y(y)=P(Y=y)$ which describes the probability that the random variable $Y$ will attain the value $y$. 
+Each of these distributions will have a support $\mathcal{Y}$ that just describes the values that the random variable can attain which is also the values at which we can evaluate $p_Y(y)$. 
+For the discrete distribution to be proper, we need to have 
+
+$$
+\sum_{y\in\mathcal{Y}} p_Y(y) = 1.
+$$
+
+Therefore, for any discrete random variable, we know that $p_Y(y) \le 1$ for any value $y$ in its support, i.e. $y\in\mathcal{Y}$.
+
+For a discrete random variable, the expectation is
+
+$$
+E[Y] = \sum_{y\in\mathcal{Y}} y\, p_Y(y)
+$$
+
+and the variance is 
+
+$$
+V[Y] = \sum_{y\in\mathcal{Y}} \left(y-E[Y]\right)^2 p_Y(y).
+$$
