@@ -20,12 +20,16 @@ We can formalize this decision by introducing my *cost function*.
 Mathematically, we write the utility $C(x)$ as a function of my decision $x$.
 In this scenario
 
-\[
+$$
 C(x) = \left\{ \begin{array}{rl}
 2.00 & \mbox{if $x$ is Nabisco} \\
 1.80 & \mbox{if $x$ is off brand} \\
 1.55 & \mbox{if $x$ is store brand}
 \end{array} \right.
-\]
+$$
+
+Since I was making a decision based on which brand was the cheapest, I was choosing $x$ to minimize the cost.
+Mathematically, we write
+
 
 
