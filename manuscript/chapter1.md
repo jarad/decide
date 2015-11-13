@@ -22,15 +22,19 @@ In this scenario
 
 {$$}
 C(x) = \left\{ \begin{array}{rl}
-2.00 & \mbox{if }x{ is Nabisco} \\
-1.80 & \mbox{if }x{ is off brand} \\
-1.75 & \mbox{if }x{ is store brand}
+\$2.00 & \mbox{if }x\mbox{ is Nabisco} \\
+\$1.80 & \mbox{if }x\mbox{ is off brand} \\
+\$1.75 & \mbox{if }x\mbox{ is store brand}
 \end{array} \right.
 {/$$}
 
 Since I was making a decision based on which brand was the cheapest, I was choosing {$$}x{/$$} to minimize the cost.
 Mathematically, we write {$$}\mbox{argmin}_x C(x){/$$} where argmin means to take the argument {$$}x{/$$} that minimizes the function {$$}C(x){/$$}. 
 In this scenario, the argmin is ``store brand''. 
+
+We have just made our first decision based on certainty.
+That is, we knew exactly what would happen for each decision that we made.
+
 
 
 ## Grocery shopping based on satisfaction
@@ -46,21 +50,23 @@ For the sake of the example, let's suppose my satisfaction for the Nabisco brand
 
 Now, when we are purchasing saltine crackers we need to weigh my satisfaction versus cost of the crackers. 
 We will formalize this using a utility function {$$}U(x){/$$} which again is a function of the decision {$$}x{/$$}. 
+This utility function increases with satisfaction and decreases with the items cost.
 In this scenario, we have 
 
 {$$}
-U(x) = \left\{ \begin{array}{rrl}
-1.00 &=3.00-2.00 & \mbox{if }x{ is Nabisco} \\
-0.70 &=2.50-1.80 & \mbox{if }x{ is off brand} \\
-0.25 &=2.00-1.75 & \mbox{if }x{ is store brand}
+U(x) = \left\{ \begin{array}{rl}
+\$1.00  & \mbox{if }x\mbox{ is Nabisco} \\
+\$0.70  & \mbox{if }x\mbox{ is off brand} \\
+\$0.25  & \mbox{if }x\mbox{ is store brand}
 \end{array} \right.
 {/$$}
+where the utility for Nabisco is \$1.00 = \$3.00-\$2.00 because our satisfaction is \$3.00 and our cost is \$2.00. 
 
 Now, we want to maximize this utility, i.e. {$$}\mbox{argmax}_x U(x){/$$} where argmax{$$}_x{/$$} returns the {$$}x{/$$} that maximizes {$$}U(x){/$$}. 
 In this example, Nabisco maximies our utility. 
 
-A> Utility is just the negative of cost, i.e. {$$}U(x) = -C(x){/$$} where cost would include your disappointment in the product.
-A> I prefer to be an optomist and therefore would prefer to maximize utility rather than minimize cost. 
+A> Utility is just the negative of cost, i.e. {$$}U(x) = -C(x){/$$} where cost would include your disappointment (negative satisfaction) in the product.
+A> Throughout the rest of the book, I prefer to be an optimist and therefore would prefer to maximize utility rather than minimize cost. 
 
 Many of the decisions we make have a component of satisfaction that is hard to quantify. 
 So we won't typically know that the satisfaction we gain for Nabisco is a specified number but rather we know that it is worth the \$0.25 extra that we have to pay over the store brand and the \$0.20 extra we have to pay over the off brand.
