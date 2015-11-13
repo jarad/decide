@@ -20,11 +20,11 @@ Therefore, for any discrete random variable, we know that $p_Y(y) \le 1$ for any
 
 For a discrete random variable, the expectation is
 $$
-E[Y] = \sum_{y\in\mathcal{Y}} y p_Y(y)
+E[Y] = \sum_{y\in\mathcal{Y}} y\, p_Y(y)
 $$
 and the variance is 
 $$
-V[Y] = \sum_{y\in\mathcal{Y}} \left(y-E[Y])^2 p_Y(y).
+V[Y] = \sum_{y\in\mathcal{Y}} \left(y-E[Y]\right)^2 p_Y(y).
 $$
 
 
@@ -44,7 +44,7 @@ The binomial distribution can be motivated by considered independent Bernoulli r
 If $X_i\stackrel{ind}{\sim} Ber(\pi)$, the the total number of success $Y = \sum_{i=1}^n X_i$ has a binomial distribution and we write $Y\sim Bin(n,\pi)$. 
 The support for a binomial distribution is all the possible sums we could observe. 
 If the $X_i$ are all 0, then $Y$ is 0 while if the $X_i$ are all 1, then $Y$ is $n$. 
-With different combinations of the $X_i$ being 0 and 1, we can obtain any integer between 0 and $n$ and thus the  support for a binomial random variable is $\mathcal{Y} = \{0,1,2,\ldots, n\}.
+With different combinations of the $X_i$ being 0 and 1, we can obtain any integer between 0 and $n$ and thus the  support for a binomial random variable is $\mathcal{Y} = \{0,1,2,\ldots, n\}$.
 
 If we consider how many ways there are to obtain a particular value $y$, we can think about selecting $y$ of the $X_i$'s to be 1 and the remainder to be 0. 
 For example, if $n=3$ and $y=1$, we can select either $X_1$, $X_2$, or $X_3$ to be a 1 with the rest being zero and thus the number of ways that we can obtain $y=1$ when $n=3$ is 3. 
