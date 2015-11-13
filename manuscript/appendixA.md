@@ -91,5 +91,3 @@ V\left[ \sum_{i=1}^n X_i \right] = V[X_1+X_2+\cdots+X_n] = V[X_1] + V[X_2] + \cd
 {/$$}
 
 Thus, if {$$}Y\sim Bin(n,\pi){/$$} then {$$}E[Y] = n\pi{/$$} and {$$}V[Y] = n\pi(1-\pi){/$$}.
-
-
