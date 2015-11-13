@@ -55,24 +55,24 @@ The combination formula is
 {/$$} 
 where {$$}n!{/$$} is the factorial function, i.e. {$$}n! = 1\times 2 \times 3 \times \ldots \times n{/$$}. 
 
-For each particular combination of {$$}X_i$'s that produce {/$$}y{$$} successes, the probability of observing this particular combination is 
-{/$$}
-\pi^y(1-\pi)^{n-y}
+For each particular combination of the {$$}X_i{/$$} that produce {$$}y{/$$} successes, the probability of observing this particular combination is 
 {$$}
-since there are {/$$}y{$$} successes each with probability {/$$}\pi{$$} of occurring and {/$$}n-y{$$} failures each with probability of {/$$}1-\pi{$$} of occurring. 
+\pi^y(1-\pi)^{n-y}
+{/$$}
+since there are {$$}y{/$$} successes each with probability {$$}\pi{/$$} of occurring and {$$}n-y{/$$} failures each with probability of {$$}1-\pi{/$$} of occurring. 
 
 Putting the combination formula together with the probability formula, we have the probability mass function
-{/$$}
+{$$}
 p_Y(y) = {n \choose y} \pi^y(1-\pi)^{n-y}.
-{$$}
-To find the expectation and variance, we can either use this formula or the following formulas for independent random variables {/$$}X_i{$$}:
-{/$$} 
+{/$$}
+To find the expectation and variance, we can either use this formula or the following formulas for independent random variables {$$}X_i{/$$}:
+{$$} 
 E\left[ \sum_{i=1}^n X_i \right] = E[X_1+X_2+\cdots+X_n] = E[X_1] + E[X_2] + \cdots + E[X_n] = \sum_{i=1}^n E[X_i]
-{$$}
+{/$$}
 and 
-{/$$} 
+{$$} 
 V\left[ \sum_{i=1}^n X_i \right] = V[X_1+X_2+\cdots+X_n] = V[X_1] + V[X_2] + \cdots + V[X_n] = \sum_{i=1}^n V[X_i].
-{$$}
-Thus, if {/$$}Y\sim Bin(n,\pi){$$} then {/$$}E[Y] = n\pi{$$} and {/$$}V[Y] = n\pi(1-\pi){$$}.
+{/$$}
+Thus, if {$$}Y\sim Bin(n,\pi){/$$} then {$$}E[Y] = n\pi{/$$} and {$$}V[Y] = n\pi(1-\pi){/$$}.
 
 
