@@ -13,16 +13,21 @@ But the idea here is that when building a model for real data, the parameters ar
 Discrete distributions are characterized by their probabiliy mass functions {$$}p_Y(y)=P(Y=y){/$$} which describes the probability that the random variable {$$}Y{/$$} will attain the value {$$}y{/$$}. 
 Each of these distributions will have a support {$$}\mathcal{Y}{/$$} that just describes the values that the random variable can attain which is also the values at which we can evaluate {$$}p_Y(y){/$$}. 
 For the discrete distribution to be proper, we need to have 
+
 {$$}
 \sum_{y\in\mathcal{Y}} p_Y(y) = 1.
 {/$$}
+
 Therefore, for any discrete random variable, we know that {$$}p_Y(y) \le 1{/$$} for any value {$$}y{/$$} in its support, i.e. {$$}y\in\mathcal{Y}{/$$}.
 
 For a discrete random variable, the expectation is
+
 {$$}
 E[Y] = \sum_{y\in\mathcal{Y}} y\, p_Y(y)
 {/$$}
+
 and the variance is 
+
 {$$}
 V[Y] = \sum_{y\in\mathcal{Y}} \left(y-E[Y]\right)^2 p_Y(y).
 {/$$}
@@ -32,9 +37,11 @@ V[Y] = \sum_{y\in\mathcal{Y}} \left(y-E[Y]\right)^2 p_Y(y).
 ### Bernoulli distribution
 
 The Bernoulli distribution, named after Swiss scientist Jacob Bernoulli, has support {$$}\mathcal{Y} = \{0,1\}{/$$} and probability mass function 
+
 {$$}
 p_Y(1) = P(Y=1) = \pi = 1 - P(Y=0) = p_Y(0)
 {/$$}
+
 where {$$}\pi\in \[0,1\]{/$$}.
 We write {$$}Y\sim Ber(\pi){/$$} which has {$$}E[Y] = \pi{/$$} and {$$}V[Y] = \pi(1-\pi){/$$}. We often refer to {$$}Y=1{/$$} as a success and {$$}Y=1{/$$} as a failure. 
 
@@ -50,29 +57,39 @@ If we consider how many ways there are to obtain a particular value {$$}y{/$$}, 
 For example, if {$$}n=3{/$$} and {$$}y=1{/$$}, we can select either {$$}X_1{/$$}, {$$}X_2{/$$}, or {$$}X_3{/$$} to be a 1 with the rest being zero and thus the number of ways that we can obtain {$$}y=1{/$$} when {$$}n=3{/$$} is 3. 
 There is a convenient formula called the combination formula that allows us to calculate the number of ways to obtain {$$}y{/$$} successes out of {$$}n{/$$} attempts. 
 The combination formula is
+
 {$$}
 {n \choose y} = \frac{n!}{(y!(n-y)!}
 {/$$} 
+
 where {$$}n!{/$$} is the factorial function, i.e. {$$}n! = 1\times 2 \times 3 \times \ldots \times n{/$$}. 
 
 For each particular combination of the {$$}X_i{/$$} that produce {$$}y{/$$} successes, the probability of observing this particular combination is 
+
 {$$}
 \pi^y(1-\pi)^{n-y}
 {/$$}
+
 since there are {$$}y{/$$} successes each with probability {$$}\pi{/$$} of occurring and {$$}n-y{/$$} failures each with probability of {$$}1-\pi{/$$} of occurring. 
 
 Putting the combination formula together with the probability formula, we have the probability mass function
+
 {$$}
 p_Y(y) = {n \choose y} \pi^y(1-\pi)^{n-y}.
 {/$$}
+
 To find the expectation and variance, we can either use this formula or the following formulas for independent random variables {$$}X_i{/$$}:
+
 {$$} 
 E\left[ \sum_{i=1}^n X_i \right] = E[X_1+X_2+\cdots+X_n] = E[X_1] + E[X_2] + \cdots + E[X_n] = \sum_{i=1}^n E[X_i]
 {/$$}
+
 and 
+
 {$$} 
 V\left[ \sum_{i=1}^n X_i \right] = V[X_1+X_2+\cdots+X_n] = V[X_1] + V[X_2] + \cdots + V[X_n] = \sum_{i=1}^n V[X_i].
 {/$$}
+
 Thus, if {$$}Y\sim Bin(n,\pi){/$$} then {$$}E[Y] = n\pi{/$$} and {$$}V[Y] = n\pi(1-\pi){/$$}.
 
 
