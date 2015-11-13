@@ -55,7 +55,7 @@ $$
 $$ 
 where $n!$ is the factorial function, i.e. $n! = 1\times 2 \times 3 \times \ldots \times n$. 
 
-For each particular combination of $X_i$'s that produce $y$ successes, the probability of observing this particular combination is 
+For each particular combination of the $X_i$ that produce $y$ successes, the probability of observing this particular combination is 
 $$
 \pi^y(1-\pi)^{n-y}
 $$
