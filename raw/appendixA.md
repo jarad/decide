@@ -46,7 +46,7 @@ The support for a binomial distribution is all the possible sums we could observ
 If the $X_i$ are all 0, then $Y$ is 0 while if the $X_i$ are all 1, then $Y$ is $n$. 
 With different combinations of the $X_i$ being 0 and 1, we can obtain any integer between 0 and $n$ and thus the  support for a binomial random variable is $\mathcal{Y} = \{0,1,2,\ldots, n\}$.
 
-If we consider how many ways there are to obtain a particular value $y$, we can think about selecting $y$ of the $X_i$'s to be 1 and the remainder to be 0. 
+If we consider how many ways there are to obtain a particular value $y$, we can think about selecting $y$ of the $X_i$ to be 1 and the remainder to be 0. 
 For example, if $n=3$ and $y=1$, we can select either $X_1$, $X_2$, or $X_3$ to be a 1 with the rest being zero and thus the number of ways that we can obtain $y=1$ when $n=3$ is 3. 
 There is a convenient formula called the combination formula that allows us to calculate the number of ways to obtain $y$ successes out of $n$ attempts. 
 The combination formula is
