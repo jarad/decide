@@ -13,7 +13,7 @@ When walking down a grocery store aisle there are many choices we can make.
 At one point in my life I was experimenting with off-brand versions of packaged foods I normally buy.
 On one particular occasion, I was buying saltine crackers.
 Typically I would be the Nabisco Premium Saltines&trade;, but I decided that on this particular occasion I would base my decision of what brand to buy solely based on which brand was cheapest. 
-The three brands available were Nabisco ($2.00), an off brand ($1.80), and the store brand ($1.75).
+The three brands available were Nabisco (\$2.00), an off brand (\$1.80), and the store brand (\$1.75).
 So I bought the store brand. 
 
 We can formalize this decision by introducing my *cost function*.
@@ -46,6 +46,7 @@ Ugh!
 It tasted terrible. 
 Since that day, when buying saltine crackers, I have only bought Nabisco Premium Saltines&trade;.
 
-Apparently my cost function has changed. 
+Apparently for all my future decisions my cost function has changed (assuming that there are cheaper brands than Nabisco).
+
 
 
