@@ -7,6 +7,6 @@ do
 done
 
 git add ../manuscript/*.md
-git commit -m "add converted files"
+git commit -m "Add converted files"
 git push
 
